@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 192
-  Top = 125
+  Left = 101
+  Top = 165
   Width = 1044
   Height = 540
   Caption = 'Form1'
@@ -169,6 +169,7 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 6
+    OnClick = Button1Click
   end
   object Button2: TButton
     Left = 208
@@ -183,6 +184,7 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 7
+    OnClick = Button2Click
   end
   object Button3: TButton
     Left = 344
@@ -197,6 +199,7 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 8
+    OnClick = Button3Click
   end
   object Button4: TButton
     Left = 480
@@ -211,6 +214,7 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 9
+    OnClick = Button4Click
   end
   object Button5: TButton
     Left = 616
@@ -225,6 +229,7 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 10
+    OnClick = Button5Click
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -232,7 +237,7 @@ object Form1: TForm1
     AutoEncodeStrings = False
     Connected = True
     HostName = 'Localhost'
-    Port = 0
+    Port = 3306
     Database = 'db_visual2'
     User = 'root'
     Protocol = 'mysql'
