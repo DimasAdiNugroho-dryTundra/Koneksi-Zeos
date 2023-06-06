@@ -69,7 +69,7 @@ end;
 procedure TForm1.Button3Click(Sender: TObject);
 begin
   zqry1.SQL.Clear;
-  zqry1.SQL.Add(‘Update kustomer set nmkustomer =‘Rahman, S.KOM’ where id= 1');
+  zqry1.SQL.Add('Update kustomer set nmkustomer =‘Rahman, S.KOM’ where id= 1');
   zqry1.ExecSQL;
 
   zqry1.SQL.Clear;
