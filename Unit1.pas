@@ -33,6 +33,7 @@ type
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
+    procedure dbgrd1CellClick(Column: TColumn);
   private
     { Private declarations }
   public
@@ -100,6 +101,15 @@ begin
   Edit3.Clear;
   Edit4.Clear;
   Edit5.Clear;
+end;
+
+procedure TForm1.dbgrd1CellClick(Column: TColumn);
+begin
+  Edit1.Text := zqry1.Fields[1].AsString;
+  Edit2.Text := zqry1.Fields[2].AsString;
+  Edit3.Text := zqry1.Fields[3].AsString;
+  Edit4.Text := zqry1.Fields[4].AsString;
+  Edit5.Text := zqry1.Fields[5].AsString;
 end;
 
 end.
