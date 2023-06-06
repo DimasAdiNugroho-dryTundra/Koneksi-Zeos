@@ -64,12 +64,18 @@ begin
   zqry1.SQL.Clear;
   zqry1.SQL.Add('select * from kustomer');
   zqry1.Open;
+
+  Edit1.Clear;
+  Edit2.Clear;
+  Edit3.Clear;
+  Edit4.Clear;
+  Edit5.Clear;  ShowMessage('DATA BERHASIL TERSIMPAN');
 end;
 
 procedure TForm1.Button3Click(Sender: TObject);
 begin
   zqry1.SQL.Clear;
-  zqry1.SQL.Add('Update kustomer set nmkustomer =‘Rahman, S.KOM’ where id= 1');
+  zqry1.SQL.Add('Update kustomer set nmkustomer="'+Edit1.Text+'", telp="'+Edit2.Text+'", alamat="'+Edit3.Text+'", kota="'+Edit4.Text+'", kodepos="'+Edit5.Text+'"  where idkustomer= 3');
   zqry1.ExecSQL;
 
   zqry1.SQL.Clear;
