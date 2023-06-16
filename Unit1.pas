@@ -29,6 +29,9 @@ type
     Button3: TButton;
     Button4: TButton;
     Button5: TButton;
+    frxDBDataset1: TfrxDBDataset;
+    frxReport1: TfrxReport;
+    Button6: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -39,6 +42,7 @@ type
     procedure posisiawal;
     procedure FormShow(Sender: TObject);
     procedure FormClick(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -213,6 +217,11 @@ begin
   Edit3.Enabled:= True;
   Edit4.Enabled:= True;
   Edit5.Enabled:= True;
+end;
+
+procedure TForm1.Button6Click(Sender: TObject);
+begin
+  frxReport1.ShowReport();
 end;
 
 end.
